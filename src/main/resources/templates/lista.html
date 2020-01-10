@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Lista de url</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="estilo-lista.css">
+	
+</head>
+<body>
+
+
+		<!-- Modal -->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+        <form id="form-update">
+        	<input type="hidden" name="id" id="id">
+        	<div class="form-group">
+        		<label for="url_base">URl-Longa</label>
+        		<input type="url" name="url_base" required id="url_base" class="form-control">
+        	</div>
+
+        	<div class="form-group">
+        		<label for="url_curta">URl-encurtada</label>
+        		<input type="url" name="url_curta" required id="url_curta" class="form-control ">
+        	</div>
+
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="submit" class="btn btn-primary">Salvar</button>
+      </div>
+     </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="barra">
+	<a href="/">Lista de Urls</a>
+</div>
+
+	<div class="container">
+		<div class="row">
+		
+		<div class="alert alert-secondary" role="alert">
+		</div>
+		
+		
+		
+			<div class="col-md-10 margin">
+				<h2>Busca de Url</h2>
+				<form id="form_pesquisa">
+				<input type="url" name="url-busca" required placeholder="Digite a URL LONGA" class="form-control input" id="pes">
+			 <button   type="submit" class="btn btn-dark mt-4" id="btn_pesquisa">Pesquisar</button>
+			</form>
+			</div>
+			
+		
+
+
+		<div class="col-md-12">
+
+			<h3>lista de urls</h3>
+			<div class="table-responsive">
+				
+			<table class="table table-hover">
+				<thead class="thead-light">
+					<tr>
+						<th>Url-longa</th>
+						<th>Url-curta</th>
+						<th></th>
+						<th class="maior">
+							<a href="#" class="btn  btn-outline-secondary">
+								<img src="_ionicons_svg_md-trash.svg" alt="Remove" title="Remove">
+							</a>
+						</th>
+
+						
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+		</div>
+
+	
+	</div>
+	
+	</div>
+	</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+			<script src="script_lista.js" type="text/javascript"></script>
+</body>
+</html>
